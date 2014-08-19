@@ -2,7 +2,7 @@ CROSS_HOST="x86_64-w64-mingw32"
 inherit cross
 
 NAME="mingw64-x86_64-p11-kit"
-VERSION=0.20.2
+VERSION=0.20.4
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="PKCS#11 module library for Win64 toolchain"
@@ -14,6 +14,7 @@ SRC_URI="http://p11-glue.freedesktop.org/releases/p11-kit-${VERSION}.tar.gz"
 SRC_DIR="p11-kit-${VERSION}"
 PATCH_URI="
 	http://pkgs.fedoraproject.org/cgit/mingw-p11-kit.git/plain/p11-kit-mingw-trust-test.patch
+	http://pkgs.fedoraproject.org/cgit/mingw-p11-kit.git/plain/p11-kit-0.20.4-tests.patch?h=f20
 	0.19.1-trust-shrext.patch
 "
 
